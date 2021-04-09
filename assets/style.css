@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+}
+
+ul, li{
+	 
+	list-style:none;
+}
+
+
+
+img{
+	max-width:100%;
+}
+
+.container{
+	max-width:1040px;
+}
+
+header{
+	padding:5px 0;
+	margin-bottom:10px;
+}
+
+.navbar-default .mainmnubox .navbar-nav>li>a{
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #069;
+  border-right: 1px solid #ccc;
+}
+
+.navbar{
+	min-height:2px;
+}
+
+.navbar-default{
+	box-shadow: none;
+	border:none;
+}
+
+.navbar-default .mainmnubox {
+  margin: 0;
+  padding: 0; 
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.navbar-default .mainmnubox li:hover {
+  background-color: #E9D6E8;
+}
+
+.top-heading {
+	margin:10px 0;
+	border-bottom: #ff0000 solid 4px;
+	padding-bottom:10px;
+}
+
+.top-heading span{
+	color: #ff0000;
+	text-decoration:underline;
+}
+
+.channeldiv{
+	  padding: 10px 0;
+	  margin-bottom:10px;
+}
+
+.results{
+	  margin: 30px auto 10px;
+	  background: #ffffcc;
+  	  text-align: center;
+}
+
+.results p{
+	margin:5px 0;
+	display:inline-block;
+}
+
+.imgclass{
+	text-align:center;
+	width:100%; 
+	padding:20px;
+}
+
+.journaltalk {
+  background-color: #f3f3f3;
+  clear: both;
+  float: left;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: 5px solid #d2d2d5;
+  width:100%;
+}
+
+.important{
+	color: #ff0000;
+}
+
+.benefits-content li{
+   /*background: url(checkbox.html) no-repeat center left transparent;*/
+  list-style: none;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+#coupon{
+	border: 3px dashed #74963E;
+	background-color: #edfcd5;
+	padding: 8px;
+	border-radius:10px;
+	margin:15px;
+	margin:15px;
+}
+
+#coupon  #title{
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.offerDisplay{
+	 
+	padding:2px;
+}
+
+.offerDisplay:after, .offerDisplay:before{
+	display: table;
+	content:'';
+}
+
+.offerDisplay:after{
+	clear:both;
+}
+
+.offerDisplayLeft{
+	display: block;
+	float:left;
+	width:35%;
+}
+
+.offerDisplayRight{
+	display: block;
+	width:60%;
+	float:left;
+}
+
+.offerDisplayRight li{
+	list-style-image: url("http://ketodietofficial.com/template/HealthyMum/img/iconRedArrow.html");
+}
+
+.offerDisplayRight .highlighttxt{
+	margin-bottom:10px;
+}
+
+.offerDisplayRight .highlighttxt span:first-child{
+	background:#FF0;
+	color:#000;
+}
+
+.offerDisplayRight .highlighttxt span{
+	font-weight: bold;
+  color: red;
+}
+
+.comments{
+  padding:15px 0 0;
+  margin-top:15px;
+  border-top: 2px dashed #999999;
+}
+
+#comments h2{
+	  text-decoration: underline;
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.commentbox{
+	  padding: 10px 20px;
+  background-color: #FFF;
+  border: 2px dashed #ccc;
+  margin-bottom: 10px;
+}
+
+
+.commentbox img{
+	float:left;
+	margin-right:10px;
+}
+
+.comment-reply-title{
+  border-bottom: 1px solid #e9e9e9;
+  border-top: 4px solid #231f20;
+  font: 700 13px/40px sans-serif;
+  letter-spacing: .5px;
+  margin: 40px 0px 30px 0;
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+#commentform input[type=text] {
+  clear: left;
+  float: left;
+  margin: 0 8px 5px 0;
+}
+
+#commentform input[type=submit], input[type=submit] {
+  cursor: pointer;
+  background: #231F20;
+  border: none;
+  color: #f8f8f8;
+  padding: 5px 10px;
+  font-size: 20px;
+  box-shadow: 3px 2px 0 #888;
+}
+
+.rightside{
+  background: rgba(120,220,250,1);
+  background: -moz-linear-gradient(top, rgba(248, 189, 236, 1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(120,220,250,1)), color-stop(85%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(248, 189, 236, 1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(248, 189, 236, 1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(248, 189, 236, 1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(248, 189, 236, 1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78dcfa', endColorstr='#ffffff', GradientType=0 );
+}
+
+.essyzlehead{
+  background-color: rgba(255, 65, 118, 1);
+  color: white;
+  margin: 0px;
+  font-size: 34px;
+}
+
+.easyle-body{
+   
+  box-shadow: rgb(121, 121, 121) 0px 0px 8px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+   
+  background-color: white;
+}
+
+.rightside h1{
+	  width: 100%;
+  color: #333;
+  font-weight: bold;
+  font-family: Arial;
+  padding: 3px;
+    margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tweet-wrap {
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 0 10px #ccc;
+  margin: 10px auto;
+  padding: 15px 15px 0;
+  position: relative;
+  max-width: 330px;
+  width: 100%;
+}
+
+.tweet-wrap .follow {
+  /*background: url(follow.html) no-repeat scroll 0 0 transparent;*/
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 65px;
+}
+
+.tweet-wrap .txt1 .model {
+  /*background: url(model1.html) repeat scroll 0 0 transparent;*/
+  float: left;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.tweet-wrap .txt1 strong {
+  /*background: url(check.html) no-repeat scroll right center transparent;*/
+  display: inline-block;
+  font-size: 18px;
+  padding-right: 30px;
+}
+
+.tweet-wrap .txt2 {
+  font-family: georgia,serif;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.tweet-wrap .txt2 span {
+  color: #09b;
+}
+
+.tweet-wrap .txt3 {
+  /*background: url(../images/tweet-bot.html) no-repeat scroll right center transparent;*/
+  border-top: 1px solid #ccc;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.navbar-brand{
+	display:none;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+
+@media (max-width: 780px) {
+	.offerDisplayLeft{
+		display: block;
+		float:none;
+		width:100%;
+	}
+	
+	.offerDisplayRight{
+		display: block;
+		width:100%;
+		float:none;
+	}
+	
+	div.offer2 {
+		display: block;
+	}
+	
+	.navbar{
+		background:#000;
+	}
+	
+	header{
+		display:none;
+	}
+	
+	.navbar-brand{
+		display:inline-block;
+		 
+	}
+	
+	.navbar-default{
+		 margin-bottom: 0;
+	}
+	
+	.collapse{
+		display:none;
+	}
+}
+
+.essyzle{
+	display:block;
+}
