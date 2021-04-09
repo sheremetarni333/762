@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Le Journal da le sante</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script async="" src="assets/fbevents.js"></script><script type="text/javascript" src="assets/jquery.min.js"></script>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="assets/bootstrap.min.css">
+                <link rel="stylesheet" href="assets/bootstrap.css">
+                    
+                    <!-- Optional theme -->
+                    <link rel="stylesheet" href="assets/bootstrap-theme.min.css">
+                        <link rel="stylesheet" type="text/css" href="assets/style.css">
+                            <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+                            
+                            <!-- Latest compiled and minified JavaScript -->
+                            
+                            <script src="assets/jquery.titlealert.js" type="text/javascript"></script>
+                            
+                            <script>$.titleAlert("Essais encore disponibles");</script>
+                            
+                            <script src="assets/jquery.sticky.js"></script>
+                            <script>
+                                
+                                
+                                
+                                $(window).load(function(){
+                                               //    $.titleAlert("Essais encore disponibles");
+                                               
+                                               $('#StickyBox').sticky({
+                                                                      topSpacing: 10,
+                                                                      bottomSpacing: $("footer").height() + 20
+                                                                      });
+                                               
+                                               });
+                                </script>
+                            <script>
+                                
+                                
+                                /* function latido(){
+                                 $( ".BuyButton" ).effect( "shake",800 );
+                                 }
+                                 setInterval(latido,12000);*/
+                            
+                            $( document ).ready(function() {
+                                                
+                                                
+                                                
+                                                //$(".yellowHighlight").blink();
+                                                if(1 == 0){
+                                                $("#comments").css("display","none")
+                                                }
+                                                if(2 == 1){
+                                                $(".offer2").css("display","none")
+                                                }
+                                                if('' == '1'){
+                                                var cntwrtr = 'hash.hash'
+                                                }
+                                                if(1 != 1){
+                                                $(".trial").css('display',"none");
+                                                }
+                                                
+                                                });
+                                                
+                                                function makeDateMinus1(){
+                                                    var mydate=new Date();
+                                                    mydate.setDate(mydate.getDate()-1); // this adds 1 day after
+                                                    var year=mydate.getYear();
+                                                    if (year < 1000){
+                                                        year+=1900
+                                                    }
+                                                    var day=mydate.getDay();
+                                                    var month=mydate.getMonth();
+                                                    var daym=mydate.getDate();
+                                                    if (daym<10){
+                                                        daym="0"+daym;
+                                                    }
+                                                    var dayarray=new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+                                                    var montharray=new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre");
+                                                    document.write(" "+dayarray[day]+", "+daym+" "+montharray[month]+" "+year+"");
+                                                }
+                            function makeDatePlus1(){
+                                var mydate=new Date();
+                                mydate.setDate(mydate.getDate()+1); // this adds 1 day after
+                                var year=mydate.getYear();
+                                if (year < 1000){
+                                    year+=1900
+                                }
+                                var day=mydate.getDay();
+                                var month=mydate.getMonth();
+                                var daym=mydate.getDate();
+                                if (daym<10){
+                                    daym="0"+daym;
+                                }
+                                var dayarray=new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+                                var montharray=new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre");
+                                document.write(" "+dayarray[day]+", "+daym+" "+montharray[month]+" "+year+"");
+                            }
+                            
+                            function today() {
+                                var mydate = new Date();
+                                var year = mydate.getYear();
+                                if (year < 1000) year += 1900;
+                                var day = mydate.getDay();
+                                var month = mydate.getMonth();
+                                var daym = mydate.getDate();
+                                if (daym < 10) daym = "0" + daym;
+                                var dayarray=new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+                                var montharray=new Array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre");
+                                document.write(" " + dayarray[day] + ", " + daym + " " + montharray[month] + ", " + year + "");
+                            }
+                            var kgConverter = function(unit,amount){
+                                
+                                /*var unit = '{#LanderCountryUnit#}';*/
+                                var weight;
+                                switch(unit){
+                                    case 'kg':
+                                    weight = amount * 1;
+                                    //return document.write(Math.round(weight) + " " + unit);
+                                    break;
+                                    case 'lb':
+                                    weight = amount * 2.20462;
+                                    //return document.write(weight.toFixed(1) + " " + unit);
+                                    break;
+                                    case 'stone':
+                                    weight = amount * 0.157473;
+                                    //return document.write(weight.toFixed(1) + " " + unit);
+                                    break;
+                                }
+                                var actualWeight = Math.floor(weight);
+                                var residuo = weight - actualWeight;
+                                if(residuo > 0){
+                                    return document.write(weight.toFixed(1) + " " + unit);
+                                }else{
+                                    return document.write(weight + " " + unit);
+                                }
+                            };
+                            $(document).ready(function(){
+                                           // Testimonials, AsSeenOnBanner, SocialNetworking
+                                           $.getScript("../../animatedjs.com/resources/functions.min.js");
+                                           if('' == '0'){
+                                           $("#AsSeenOnBanner").css('display','none');
+                                           }
+                                           if('' == '0'){
+                                           $(".SocialNetworking").remove();
+                                           }
+                                           if('' == '0'){
+                                           $("#Testimonials").remove();
+                                           }
+                                           if('' == '0'){
+                                           $("#NavBar").remove();
+                                           }
+                                           if('0' == '0'){
+                                           $("#CuponOffer").remove();
+                                           }
+                                           $("a").attr("target","_blank");
+                                           });
+                                </script>
+                            <style id="rds_highlighting">.NoIndex_clr_bg_txt_and_img, .NoIndex_clr_bg_txt_and_img * { color: rgb(0, 0, 0) !important; background-color: #DAA520 !important;}.NoIndex_cross_txt, .NoIndex_cross_txt * { text-decoration: line-through !important; }a.rds_hl_nofollow {text-decoration: line-through !important;}img.rds_hl_nofollow {outline: 1px dashed #000;}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="assets/translateelement.css">
+
+</head>
+<body>
+    <header class="text-center">
+        <div class="container"> <img src="assets/logo.jpg" align="center" alt="Logo"> </div>
+    </header>
+    <nav class="navbar navbar-default">
+        
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" style="font-size:12px;" id="linkupdated" target="_blank">Updated: <script>today();</script>      </a> </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse mainmnubox">
+            <ul class="nav navbar-nav">
+                <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Home</a></li>
+                <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Fitness</a></li>
+                <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Minceur</a></li>
+                <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Beauté</a></li>
+                <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Hollywood</a></li>
+                <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Astuces</a></li>
+                <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Fashion</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 top-heading">
+                    <h2><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank" style="color:inherit"><span>En Exclusivité:</span> La perte de poids qui affole les médecins. Une nouvelle méthode aide des femmes à perdre de 10 à 15 kilos  en 4 semaines!</a></h2>
+                    <div><em>Ce rapport a été créé par Le journal de la santé, afin de révéler la vérité cachée d'un régime très particulier</em></div>
+                </div>
+                <div class="leftside col-sm-8">
+                    <div id="mainText">
+                        <div class="channeldiv"> <img alt="" src="assets/fra-tv-channels_2.png"></div>
+                        <p> <span style="vertical-align:middle;">Par <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Marine Bouchard</a></span> | <img alt="views" title="views" height="15" width="15" src="assets/pageviews_2.jpg"> <span><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">2,391,558</a></span> | <img alt="comments" title="comments" height="15" width="15" src="assets/comments_2.jpg"> <span><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">656</a></span> </p>
+                            <p>Au cours des derniers mois, 2 nouveaus produits minceur ont fait parlé beaucoup d'eux aux états-unis et arrivent en france. </p>
+                            <p>Ces 2 produits sont utilisés en combinaison afin de maximiser la perte de poids.</p>
+                            <p> Ce nouveau systeme minceur, dit "révolutionaire", <strong>combine l'action des ces 2 produits pour obtenir des pertes de poids considérables, allant jusqu'à la perte de 15 kilos de masses graisseuses en moins d'1 mois.</strong></p>
+                            <p> Ce système est appelé le 'saint graal' des régimes, car non seulement <strong>il est extremement efficace, mais aussi sure ( même très bon pour la santé), et pas chère!</strong></p>
+                            <p>De nombreuses célébrités américaines l'ont utilisé avec succès. La clé de cette technique réside dans l'action combinée d'un produit de purification des intestins (<strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"></a></strong>)avec le produit minceur le plus efficace au monde (<a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a>). La double action de nettoyage et de perte de poids est cliniquement prouvée. Cette méthode évacue les toxines de votre corps et pousse votre métabolisme à brûler la graisse sans nuire au système immunitaire.</p>
+                            <p>Maigrir se présente souvent comme étant un défi impossible.  Les résultats sont trop souvent très faibles, voire affreusement décevants. Lorsque nous avons commencé à enquêter sur ce nouveau régime combiné, nous avons vite compris que cette technique pouvait apporter une véritable solution.<em style="font-weight: bold"> Lisez la suite pour mieux comprendre.</em></p>
+                            <div style="clear: both;"></div>
+                            <div class="results"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="contentImage" style="width:100%;" alt="" src="assets/beforeafter_bar_2.jpg"></a>
+                                <p><em>Perte minimum de 12 kilos en 1 mois pour les lecteurs qui ont testé la méthode</em></p>
+                            </div>
+                            <p>La raison pour laquelle la plupart des régimes échouent, c'est qu'ils sont trop restrictifs et pas adaptés à la vie de tous les jours. Certains vous obligent à prendre des tonnes de protéines, d'autres banissent toutes formes de glucides. Ils vous obligent à changer radicalement vos habitudes alimentaires,. La méthode dont nous parlons aujourd'hui ne vous demande pas de diminuer votre apport calorique ou d'aller faire du sport... et en plus, elle ne vous coûtera pas les yeux de la tête.</p>
+                            <p>Vous avez certainement déja entendu parlé de la kétone de framboise . C'est un extrait de framboise en forte concentration, dont l'efficaté pour perdre du poids a été prouvée cliniquement. Il s'attaque à la graisse et pas aux muscles et permet réellement au corps d'éviter la formation de nouvelles cellules graisseuses. Des études scientifiques de l’Université de Los Angeles confirment que la kétone de framboise (disponible sous le nom <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a> ) tire la graisse de votre corps et augmente la capacité de votre corps à brûler les graisses par 318%.</p>
+                            <p>Mais attention! Sur le marché, plupart des produits à base e kétone sont des produits contrefaits. Les imitations contiennent seulement des faibles concentrations de kétones de framboise Seule la marque <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> contient 95% d'extrait pure (ce dosage est le même que celui utilisé dans les essais cliniques). </p>
+                            <p>Après avoir lu toutes les études sur le sujet, il est claire que les participants aux tests qui ont pris le brûleur de graisse <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> associé au purificateur <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">,</a></strong> ont battu des records de perte de poids. Tous les participants ont confirmé le succès incroyable de ce régime. Le secret d’une perte de poids tellement sensationnelle que, si vous combinez <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> avec un produit detox tel que <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><strong></strong></a> vous obtenez tout simplement une machine à brûler les graisses. (Les études ont prouvé que cette combinaison augmente la capacité de votre corps à bruler les graisses de 780%.)</p>
+                            <p>Les innombrables témoignages de réussite de personnes du monde entier qui ont toutes déclaré une perte de poids rapide sans avoir beaucoup changé leur mode de vie nous ont donné envie d'essayer. Nous avons ainsi demandé à certains de nos lecteurs de tester la méthode.</p>
+                            <p align="center"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="contentImage" alt="" style="width:100%; " src="assets/proof-2-stone_2.jpg"></a></p>
+                            <p><strong>Notre lectrice lyonnaise Jennifer a perdu plus de
+                                <script>kgConverter('kg', 16 );</script>16 kg
+                                en 5 semaines grâce à ce régime combiné de <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a> </strong></p>
+                            <p>Elle raconte son histoire:<strong>"Je ne pouvais pas croire à quel point c'était facile. Je n'ai pas changé mon alimentation ni ma routine quotidienne, mais la graisse a fondu comme du beurre. C’est le cas de le dire! J'adore ce truc! Enfin un régime qui est simple et qui fonctionne "</strong></p>
+                            <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">
+                            <img alt="" class="imgclass" src="assets/trainer-recommends-it-kg_2.jpg"></a>
+                                <p>J'ai accepté de servir de testeuse pour le test du "Journal De la Santé", étant donné qu'il ne me restait que peu de temps avant mon mariage. Je voulais perdre environ
+                                <script>kgConverter('kg', 10 );</script>10 kg
+                                pour la cérémonie. Pour essayer le méthode des deux produits combinés j'ai décidé d commander les deux produits <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> et <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"></a></strong>. Après de longues recherches, nous avons trouvé une offre avec des bouteilles d’échantillons gratuits de <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> et de <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">.</a></strong> Bien qu'il existe de nombreux produits à base de kétones de framboise, j'ai choisi les produits recommandés <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> et <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">.</a></strong>, parce que j'avais lu partout que c'étaient sont les fournisseurs les plus crédibles et fiables sur le marché (selon la plupart des magazines et des études).. </p>
+                                <p>Les deux bouteilles d'essai de <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> et <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">,</a></strong> sont arrivés  3 jours après avoir commandé mes bouteilles en ligne. L’expédition était aux frais réduits.</p>
+                                <p><strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a> a été testé en clinique:</strong></p>
+                                <ul class="benefits-content">
+                                    <li>Fait perdre 4 fois plus de poids que les régimes et l'activité physique</li>
+                                    <li>Empêche le corps de produire et de stocker de la graisse.</li>
+                                    <li>Raffermit la Silhouette</li>
+                                    <li>Favorise  le métabolisme et brûle l'excès de graisse</li>
+                                </ul>
+                                
+                                <p><strong>Notre test du régime combiné</strong></p>
+
+                                <ol>
+                                    <li><span style="color: #3366ff;"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><strong>Prendre une pilule Keto Biolife par jour (le matin)</strong></a></span></li>
+                                    
+                                </ol>
+                                <div class="journaltalk">
+                                    <p style="text-align:left; font-size: 20px; line-height: 25px;"><strong>Mes résultats</strong> 14 kg en seulement 1 mois : 3 tailles de moins!</p>
+                                    <p><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="contentImage" alt="4-weeks-1" src="assets/before-after-4weeks_2.jpg"></a></p>
+                                    <p><strong><span class="step1">Première semaine:</span></strong></p>
+                                    <p>Après une semaine d'utilisation de la combinaison des deux produits, j'ai été surprise par les résultats spectaculaires. Mon niveau d'énergie a augmenté, et je n'avais même pas faim. Un effet secondaire agréable de ce régime combiné est son pouvoir de modérer l'appétit.</p>
+                                    <p><strong>Je me sentais franchement fantastique et en pleine forme.</strong></p>
+                                    <p>Le mieux, c'est que je n'avais même pas changé  ma routine quotidienne. Au jour 7, je me suis pesée et je n'en revenais pas de lire ce qui s’affichait sur ma balance ! J'avais perdu
+                                    <script>kgConverter('kg',4.5);</script>4.5 kg
+                                    . Mais je n'étais toujours pas convaincue, car l'on dit qu'au début de tous les régimes, on perd beaucoup de poids en eau. Je voulais attendre de voir les résultats lors des prochaines semaines. Mais c'était totalement satisfaisant! Je pesais désormais, pour la première fois depuis des années, moins de
+                                    <script>kgConverter('kg',65);</script>65 kg
+                                    </p>
+                                    <p><strong><span class="step1">2ème semaine:</span></strong></p>
+                                    <p>Après deux semaines d'utilisation de ces deux produits, je commençais la semaine avec encore plus d'énergie et je dormais réellement plus profondément que jamais auparavant. J’étais en pleine forme avec une profonde sensation de repos et d’apaisement. Je ne me réveillais plus pendant la nuit et je ne me tournais plus d'un côté à l'autre dans mon lit, parce que mon corps était maintenant réellement en mesure de se détendre (je crois que c'est à la suite de l'évacuation des toxines). De plus, j'ai perdu
+                                    <script>kgConverter('kg',4);</script>4 kg
+                                    supplémentaires, ce qui faisait un total de perte de poids de <strong>
+                                        <script>kgConverter('kg',8.5);</script>8.5 kg
+                                        en seulement 2 semaines.</strong></p>
+                                    <p>Je dois admettre que je suis désormais convaincue que ce régime est plus qu'une simple illusion.</p>
+                                    <p><strong>3ième semaine :</strong></p>
+                                    <p>J'avais encore perdu un peu plus de
+                                    <script>kgConverter('kg',3);</script>3 kg
+                                    et 2 tailles de vêtement. Et mon énergie était toujours aussi débordante. Il arrive souvent qu'autour de la troisième semaine de régime, on ressente une certaine baisse de tonus. Mais avec la cure <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a></strong> et <strong><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"></a></strong>, mon niveau de forme ne baissait jamais et restait au contraire régulier tout au long de la journée. Je remarquais également que ma digestion s'était nettement améliorée. Je n'avais plus de ballonnements après les repas!</p>
+                                    <p><strong>4ième semaine:</strong></p>
+                                    <p>Après la quatrième semaine, mes résultats définitifs étaient choquants et si surprenant. J'ai perdu
+                                    <script>kgConverter('kg',14);</script>14 kg
+                                    depuis le début de ce régime combiné! Cela agace désormais toutes mes collègues de Santé Maman Quotidien en France, Paris de ne pas s'être portées volontaires comme testeuse. Avec <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><strong>Keto Biolife</strong></a>  j'ai perdu <strong>
+                                        <script>kgConverter('kg',2.5);</script>2.5 kg
+                                        supplémentaires et 3 tailles lors de la quatrième semaine.</strong>Les résultats sont stables! Mais pour être honnête, je n'ai plus grand chose à perdre désormais. Je vais certainement continuer à utiliser Raspberry Ketone parce qu'il a tellement d'antioxydants et de vitamines que ma peau est magnifique. Et je souhaite que je garde ma nouvelle silhouette!</p>
+                                    <p></p>
+                                    <center>
+                                        <strong style="font-size: 18px;">Je ne pourrais pas être plus satisfaite avec les résultats!</strong>
+                                    </center>
+                                    <p></p>
+                                    <p></p>
+                                    <center>
+                                        <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">
+                                        <img alt="wedding" src="assets/se_wedding_2.jpg"></a>
+                                            </center>
+                                    <p></p>
+                                    <p></p>
+                                    <center>
+                                        <strong style="font-size: 18px;"> J'ai perdu 14 kg en 4 semaines, sans faire aucun régime spécial, sans faire du sport intense. </strong>
+                                    </center>
+                                    <p></p>
+                                </div>
+                                <!-- end results -->
+                                <p><b>En somme, je dois admettre qu'au début nous avions des doutes quant à l'efficacité de ce régime. Nous présentons chaque année environ 80 régimes et AUCUN n'a jamais aussi bien marché.</b>Sceptiques au départ, nous sommes devenus de fervents partisans de cette méthode de régime combiné. Vous pouvez tester par vous-même si vous avez encore des doutes. Le résultat parle de lui-même. Vous n'avez rien à perdre, juste une nouvelle vie à gagner. J'ai ajouté un lien de promo spéciale à notre reportage exclusif qui est à disposition de nos lectrices pendant une durée limitée. Ainsi, vous bénéficiez de la même remise que j'ai obtenue des fabricants, mais aussi des mêmes résultats qui ont été obtenus au cours des études.<br>
+                                <b> </b></p>
+                                
+                                <div id="coupon">
+                                    <p align="center"><i id="title"> Offre spéciale avec des Bouteilles RÉSERVÉES à nos lecteurs:</i></p>
+                                    <div class="offerDisplay">
+                                        <div class="offerDisplayLeft">
+                                            <center>
+                                                <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"> <img alt="..." class="img-responsive" src="assets/prod.png"></a>
+                                            </center>
+                                        </div>
+                                        <div class="offerDisplayRight">
+                                            <ul>
+                                                <center>
+                                                    <li><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><span>Profitez de notre lien exclusif et ne payez que les frais de port!</span></a></li>
+                                                </center>
+                                            </ul>
+                                            <div class="highlighttxt" align="center"><span></span><br>
+                                                <span>(Cette offre se termine le <script>today();</script>  )</span></div>
+                                            <br>
+                                            <div>
+                                                <center>
+                                                    <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="BuyButton" src="assets/unnamed.png"></a>
+                                                </center>
+                                            </div>
+                                        </div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <p>Chers lectrices (et lecteurs), il est rare que nous fassions ces reportages spéciaux avec leurs propres tests car la plupart des méthodes de régime n'en valent pas la peine. Mais cette méthode etait trop efficace pour ne pas la partager. Testez-la et envoyez-nous votre témoignage de réussite.</p>
+                                <p><strong>Les quantités sont limitées.</strong> <strong><span class="weeks">Attention la vente se termine le: <script>today();</script>      </span></strong></p>
+                                <p>Vous souhaitez partager un conseil consommateur la semaine prochaine avec nous ? Si oui, veuillez nous envoyer un e-mail.</p>
+                                <div id="comments" class="comments">
+                                    <h2>Commentaires:</h2>
+                                    <p><span>Lisez les réactions pour :</span> <span>Nouvelle Pilule "Minceur" a conquis la France. <em>(20 de 44)</em></span></p>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img src="assets/f1_2.jpg"></a><span style="font-size:14px;">Eva</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script> </span></div>
+                                        <p>Mes amies et moi-même, nous nous attendions toutes à voir la cure <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a> arriver dans les actualités. Au moins cinq d'entre nous ont suivi la cure avec <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a> et Pure Detox (ce qui nous a coûté plus environs de 220 €) et nous avons toutes perdu un bon paquet de kilos. Ce truc est vraiment incroyable et a changé notre vie à toutes. Bonne chance à tout le monde, ne manquez pas cette formidable opportunité.</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/f2_2.jpg" ></a><span style="font-size:14px;">Carla</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script></span></div>
+                                        <p>J'ai vu le reportage à la télé l'autre jour et j'ai été bluffée par les résultats. Je me marie le mois prochain, alors ça ne peut pas mieux tomber !! Merci pour le tuyau !</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"> <img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/m1_2.jpg"></a><span style="font-size:14px;">Gérard</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script> </span></div>
+                                        <p>Je me suis décidée et j'ai commandé mes essais sans risque. J'ai hâte de commencer et de voir ce qui va se passer.</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/f4_2.jpg"></a> <span style="font-size:14px;">Nathalie</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script> </span></div>
+                                        <p>Je n'arrête pas de voir des cures à base de ketone de framboise un peu partout. J'ai même entendu ma mère en parler il y a quelques jours avec l'une de ses amies qui a perdu 6 kilos et demi dans les 15 premiers jours ! Il faut absolument que j'essaie moi aussi, merci.</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"> <img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/f7_2.jpg"></a> <span>Thierry</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script> </span></div>
+                                        <p>Super ! Je suis contente de mes résultats. J'ai gagné une nouvelle vie! MERCI</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"> <img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/f8_2.jpg"> </a><span style="font-size:14px;">Nicole</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script></span></div>
+                                        <p>Ce truc est fantastique ! Mon meilleur ami Nicolas a suivi la même cure et a perdu une quantité incroyable de kilos, je n'arrivais pas à le croire. J'ai alors fait quelques recherches par moi-même et c'est comme ça que je suis tombée sur cet article. C'est hallucinant qu'ils offrent ces essais sans risque ! Je sais que Nicolas a dépensé environ 430 € et qu'il était ravi... Imaginez sa joie si cela lui avait coûté moins de 12 euros ! C'est une véritable bénédiction, merci beaucoup !!</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/f9_2.jpg" ></a><span style="font-size:14px;">Amélie</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script> </span></div>
+                                        <p>J'ai lutté toute ma vie contre mes kilos et j'espère vraiment que c'est la solution. Je me suis jetée à l'eau et j'ai commandé les essais; je me suis aussi inscrite à la gym. J'espère véritablement perdre au moins 45 kg avant la fin de l'année.</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/f10_2.jpg" ></a><span style="font-size:14px;">Lynne</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png"><script type="text/javascript">makeDateMinus1();</script> </span></div>
+                                        <p>Je viens juste de commander mes essais. Je suis impatiente de les recevoir !! Merci, Lynne T.</p>
+                                    </div>
+                                    <div class="commentbox alignnone">
+                                        <div class="commentbox-top"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img class="alignleft size-full wp-image-68" title="" alt="" height="50" width="50" src="assets/f11_2.jpg"></a><span>Isabelle</span><br>
+                                            <br>
+                                        <span><img src="assets/calendar_2.png" o><script type="text/javascript">makeDateMinus1();</script></span></div>
+                                        <p>L'une de mes amies a suivi la cure <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a> et Pure Detox et me les a recommandées il y a 3 semaines. J'ai commandé les produits et je les ai reçus 3 jours après (mais je n'ai pas bénéficié des essais gratuits, car je n'étais pas vos liens). Les résultats ont été incroyables et j'ai hâte de voir ce qu'il en sera avec la troisième et quatrième semaine.</p>
+                                    </div>
+                                    <div id="commentsection" class="comments"><!--IF THERE ARE COMMENTS-->
+                                        <div id="respond" class="comment-respond">
+                                            <h3 id="reply-title" class="comment-reply-title">Laissez un commentaire<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" style="display:none;" target="_blank" class="rds_hl_nofollow">Cancel reply</a></small></h3>
+                                            <form method="post" id="commentform" class="commentform">
+                                                <p class="comment-notes">Votre adresse email ne sera pas publiée. Les informations requises sont marquées <span class="required">*</span></p>
+                                                <p class="commentform-author">
+                                                <label for="author">Name <span class="required">*</span></label>
+                                                <input id="author" name="author" type="text" value="" size="30" aria-required="true">
+                                                    </p>
+                                                    <p class="commentform-email">
+                                                    <label for="email">Email <span class="required">*</span></label>
+                                                    <input id="email" name="email" type="text" value="" size="30" aria-required="true">
+                                                        </p>
+                                                        <p class="commentform-url">
+                                                        <label for="url">Website</label>
+                                                        <input id="url" name="url" type="text" value="" size="30">
+                                                            </p>
+                                                            <p>
+                                                            <textarea class="form-control" name="comment" id="comment" rows="10" tabindex="4"></textarea>
+                                                            </p>
+                                                            <p class="form-submit">
+                                                            <input name="submit" type="submit" id="submit" value="Poster un commentaire">
+                                                                </p>
+                                                                </form>
+                                        </div>
+                                        <!-- #respond --></div>
+                                </div>
+                                </div>
+                </div>
+                <div class="rightside col-sm-4">
+                    <h1>INFOS</h1>
+                    <div class="righttxt">
+                        <div align="center"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img alt="" src="assets/scientist2_2_2.jpg" ></a>
+                        </div>
+                        <p><br>
+                        Les dernières découvertes scientifiques: <br>
+                        <br>
+                        C'est la carence en cette substance en concentration élevée dans <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a> qui empêche la plupart des gens de perdre du poids! Un produit encore peu connu chez nous en Europe, il est d'une efficacité jamais vue ailleurs. Si vous le combinez à un purificateur tel que le <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Pure Detox</b></a>, vous pouvez perdre jusqu'à <strong>28 kg en seulement 2 mois!</strong><br>
+                        <br>
+                        Il a été scientifiquement prouvé que <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a>, s'il est associé avec le produit Detox , constitue la combinaison parfaite pour une perte de graisse optimale..</p>
+                        <div id="Testimonials">
+                            <hr>
+                            <p><strong>Ce que les autres disent...</strong></p>
+                            <div class="watotherssay">
+                                <center>
+                                    <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img alt="..." src="assets/beforeafter_3_2.jpg" ></a>
+
+                                        </center>
+                                <br>
+                                <p>"Tous mes amis se vantaient du poids qu'ils avaient perdu grâce à <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a> et <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Pure Detox</b></a>. J'ai commencé à avoir des problèmes de poids après mon inscription à l'université, et comme vous pouvez l'imaginer, on se moquait beaucoup de moi à cause des kilos en trop sur mon ventre. Finalement, j'ai essayé <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a> et <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Pure Detox</b></a> et laissez-moi vous dire que je n'essaierai plus JAMAIS un autre régime - ces produits sont incroyables"<br>
+                                <strong>~ Suzanne - Paris</strong></p>
+                            </div>
+                            <hr>
+                            <div class="watotherssay">
+                                <center>
+                                    <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img alt="" src="assets/bfandaf_2.jpeg" ></a>
+                                        </center>
+                                <br>
+                                <p>J'ai commencé dès l'âge de 25 ans à avoir des problèmes avec mon apparence. J'étais un fil de fer, je suis devenu un gros nounours! Jusqu'à présent, je n'ai essayé que la cure combinée <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a> et <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Pure Detox</b></a>. Mon résultat au bout de 4 semaines: 13 kg de graisse en moins et on voit mes abdos maitenant! Je regrette de ne pas avoir connu ces comprimés avant.<br>
+                                <strong>~ Pierre - Nantes</strong></p>
+                            </div>
+                            <hr>
+                            <div class="watotherssay">
+                                <center>
+                                    <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img alt="" src="assets/bfandaf_1.jpg" ></a>
+                                    
+                                        </center>
+                                <br>
+                                <p>En tant que mère de 2 enfants, je jongle quotidiennement entre le travail, les enfants, et toutes les autres corvées de la vie quotidienne. Depuis mon premier enfant, j'ai pris du poids. J'ai essayé de maigrir, mais  peu importe quelle méthode j'essayis, je n'avais tout simplement jamais assez de temps pour faire du sport et pas assez d'énergie pour suivre un régime drastique. Un ami m'a offert le régime combiné <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a> et <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Pure Detox</b></a>- et j'y croyais lorsque j'ai commencé à perdre du poids! Merci - ça m'a vraiment sauvé la vie! <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><b>Keto Biolife</b></a> - c'est magique!!<br>
+                                <strong>~ Sylvie - Nice</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color:white;" class="SocialNetworking">
+                        <hr>
+                        <div class="results"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" ng-href="#" target="_blank"> <img class="contentImage" alt="" src="assets/beforeafter_1_2.jpg" ></a></div>
+                        <div class="tweet-wrap "><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank" ng-href="#">
+                            <div class="follow"></div>
+                        </a>
+                        <div class="txt1">
+                            <figure class="model model1"></figure>
+                            <strong>Jessica Teissier</strong><span>@JessicaTeissier</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="txt2">J'ai perdu 19 kg en 8 semaines ! Plus de complexe à la plage. <span>#bikinitime #<a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">Keto Biolife</a> fonctionne</span></div>
+                        <div class="txt3"><strong>8</strong>RETWEETS<strong>47</strong>FAVORITES</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="StickyBox-sticky-wrapper" class="sticky-wrapper">
+                        <div id="StickyBox-sticky-wrapper" class="sticky-wrapper">
+                            <div id="StickyBox-sticky-wrapper" class="sticky-wrapper" style="height: 451px;"><div id="StickyBox-sticky-wrapper" class="sticky-wrapper" style="height: 346px;"><div id="StickyBox-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 369px;"><div class="visible-lg essyzle" id="StickyBox" style="width: 317px; position: fixed; top: 10px;">
+                                <div class="essyzlehead">
+                                    <center>
+                                        <span>ESSAYEZ-LE</span>
+                                    </center>
+                                </div>
+                                <div class="text-center easyle-body"><a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank"><img style="width: 75%;" src="assets/prod.png"></a>
+                                    <center>
+                                        <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" target="_blank">
+                                            <div class="ui-effects-wrapper"><img class="BuyButton" src="assets/unnamed.png" ></div>
+                                        </a>
+                                    </center>
+                                </div>
+                            </div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="bottombar">
+        <center>
+            <span class="expire-text" id="counter">Sonderangebot endet in 14:18</span>
+            <a href="https://legelit.life/?d3nhb=c23594795c6600855bbe5&d8pwabvium=healthyexclusives.netlify.app&x2jquvgt=netlify" class="btn btn-warning">Cliquez ici</a>
+        </center></div>
+    <script>
+        function countdown(minutes) {
+            var seconds = 60;
+            var mins = minutes
+            function tick() {
+                var counter = document.getElementById("counter");
+                var current_minutes = mins-1
+                seconds--;
+                counter.innerHTML = "Sonderangebot endet in " + current_minutes.toString() + ":" + (seconds < 10 ? "0" : "")  + String(seconds);
+                if( seconds > 0 ) {
+                    setTimeout(tick, 1000);
+                } else {
+                    
+                    if(mins > 1){
+                        
+                        countdown(mins-1);
+                        
+                    }
+                }
+            }
+            tick();
+        }
+    
+    countdown(15);
+        </script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="assets/translate_24dp.png" width="20" height="20" alt="Google Переводчик"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Исходный текст</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Предложить лучший вариант перевода</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+    
+    <div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
